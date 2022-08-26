@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/border_black.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/custom_seekbar.xml" value="0.1045" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/custom_thumb.xml" value="0.1045" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/custom_thumb_deactive.xml" value="0.1045" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic__79859.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_baseline_check_box_24.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_baseline_check_box_outline_blank_24.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_baseline_radio_button_checked_24.xml" value="0.1425" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_baseline_radio_button_unchecked_24.xml" value="0.1425" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_emi_ic.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_fd.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_gst.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_rd.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_rupees.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/ic_stampduty.xml" value="0.141" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/new_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/rounded_edittext.xml" value="0.1265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/rounded_edittext2.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/rounded_edittext21.xml" value="0.2115" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/drawable/spinner_sla.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/font/roboto_medium.xml" value="0.234375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_capital_gain_tax.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_compare_loan.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_eighty_ucalculator.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_fdcalculator.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_gratuity_calculator.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_gstcalculator.xml" value="0.21" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_hracalculator.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_invoice_generator.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_ppfactivity.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_rdcalculator.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_sipcalculator.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_stamp_duty.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_start.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/activity_tds_calculator.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/add_item_bill.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/hpdialog.xml" value="0.225531914893617" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/invoice_item.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/item_layout_for_pdf.xml" value="0.16673792218896966" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/item_pdf_layout.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/item_toggle_switch.xml" value="0.67" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/layout/spinner_item.xml" value="0.423828125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/xml/deviceadmin.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/EmiCalculator/app/src/main/res/xml/file_path.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.1388888888888889" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

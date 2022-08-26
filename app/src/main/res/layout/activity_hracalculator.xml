@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/whitenew"
+        android:layout_height="match_parent"
+        tools:context=".HRACalculator">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hra_calculator"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/learn_more"
+                    android:textAlignment="center"
+                    android:textColor="#DADDE1"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv2"
+                    app:srcCompat="@drawable/ic_rd" />
+                <TextView
+                    android:id="@+id/tvliving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:text="@string/living_in"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv1" />
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_above="@+id/view_below" >
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color_blue"
+                        android:text="Metro City" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/text_color_blue"
+                        android:layout_height="wrap_content"
+                        android:text="Other City" />
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/tv_metro_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/metro_city"
+                    android:textColor="#777474"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:text="@string/basic_salary"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+                <EditText
+                    android:id="@+id/basic_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter your basic salary"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:text="@string/dearness_allowance"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_loan_amout" />
+
+                <EditText
+                    android:id="@+id/dearness_alllowance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter dearness allowance"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:visibility="gone"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:text="@string/hra_received"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_loan_amout" />
+
+                <EditText
+                    android:id="@+id/hra_received"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter HRA received"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:text="@string/rent_paid"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_loan_amout" />
+
+                <EditText
+                    android:id="@+id/rent_paid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter rent paid"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btn_caculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/app_color"
+                    android:elevation="5dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/calculate"
+                    app:cornerRadius="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll8"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:visibility="gone"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/border_black"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:id="@+id/maturityValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textColor="@color/app_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="100" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

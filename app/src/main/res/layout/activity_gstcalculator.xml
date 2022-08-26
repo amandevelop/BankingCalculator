@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".GSTCalculator">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/gst_calculator"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_more"
+            android:textAlignment="center"
+            android:textColor="#DADDE1"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:srcCompat="@drawable/ic_gst" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_line_"
+            android:drawablePadding="10dp"
+            android:text="@string/initial_amount"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv1" />
+        <EditText
+            android:id="@+id/initial_amnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic_rupees"
+            android:drawablePadding="10dp"
+            android:hint="Enter your loan amount"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/tv3" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_line_"
+            android:drawablePadding="10dp"
+            android:text="@string/rate_of_gst"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/initial_amnt" />
+        <EditText
+            android:id="@+id/rate_of_gst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/ic__79859"
+            android:drawablePadding="10dp"
+            android:hint="Rate of GST(%)"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/tv4" />
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_line_"
+            android:drawablePadding="10dp"
+            android:text="@string/your_state"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rate_of_gst" />
+        <FrameLayout
+            android:id="@+id/fl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv5">
+
+            <Spinner
+                android:id="@+id/your_spinner"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_line_"
+            android:drawablePadding="10dp"
+            android:text="@string/your_state"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl1" />
+        <FrameLayout
+            android:id="@+id/fl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv6">
+
+            <Spinner
+                android:id="@+id/customer_spinner"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+        <RadioGroup
+            android:id="@+id/rg_gst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/fl2">
+
+            <RadioButton
+                android:id="@+id/add_gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:buttonTint="@color/app_color"
+                android:checked="true"
+                android:text="Add GST +"
+
+                android:textColor="@color/text_color_blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/remove_gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:buttonTint="@color/app_color"
+                android:text="Remove GST -"
+                android:textColor="@color/text_color_blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@color/app_color"
+            android:onClick="Calculate"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/calculate"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_gst"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll8"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:background="@drawable/border_black"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/btn1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:weightSum="2"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="5dp"
+                  android:textColor="@color/text_color_blue"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:text="Net Amount : "/>
+              <TextView
+                  android:id="@+id/netAmt_tv"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="5dp"
+                  android:textColor="@color/app_color"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  tools:text="100" />
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="GST Amount : "/>
+                <TextView
+                    android:id="@+id/gstAmt_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/app_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Total Amount : "/>
+                <TextView
+                    android:id="@+id/totalAmt_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/app_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="CGST : "/>
+                <TextView
+                    android:id="@+id/cgst_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="SGST : "/>
+                <TextView
+                    android:id="@+id/sgst_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="IGST : "/>
+                <TextView
+                    android:id="@+id/igst_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

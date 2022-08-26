@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EightyUCalculator">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="@string/eightyuCalculator"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="@string/learn_more"
+                    android:textAlignment="center"
+                    android:textColor="#DADDE1"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/white"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv2"
+                    app:srcCompat="@drawable/ic_sip" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="@string/financial_year"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+                <TextView
+                    android:id="@+id/financial_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="Select Financial Year"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="@string/status"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_loan_amout" />
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="Select status"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_line_"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="@string/percentagedisability"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_loan_amout" />
+
+
+                <TextView
+                    android:id="@+id/percentage_of_disablibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@drawable/ic_rupees"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/popinsmedium"
+                    android:text="Select"
+                    android:visibility="gone"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/btn_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/app_color"
+                    android:elevation="5dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/calculate"
+                    app:cornerRadius="10dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/deduction_amount"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deducation_amnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="100" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

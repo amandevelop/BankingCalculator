@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitenew"
+        style="@android:style/Theme.NoTitleBar.Fullscreen"
+        tools:context=".InvoiceGenerator">
+        <include layout="@layout/item_pdf_layout"
+           android:id="@+id/pdf_view"
+            android:visibility="gone"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll39"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/app_light_color"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/invoice_creator"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvinvoice_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="⦿ Invoice detail :-"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tvinvoice_detail"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Invoice no."
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv1" />
+                    <EditText
+                        android:id="@+id/invoice_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Enter Invoice no."
+                        android:inputType="number"
+                        android:layout_marginStart="5dp"
+                        android:maxLength="10"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Invoice Date"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv1" />
+                    <TextView
+                        android:id="@+id/invoice_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Select Invoice date"
+                        android:inputType="number"
+                        android:layout_marginStart="5dp"
+                        android:maxLength="10"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="⦿ Bill to :-"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="10dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Customer name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv1" />
+                    <EditText
+                        android:id="@+id/customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Enter full name"
+                        android:layout_marginStart="5dp"
+                        android:maxLength="20"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Contact No."
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/text_color_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv1" />
+                    <EditText
+                        android:id="@+id/customer_mobile_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Enter mobile number"
+                        android:inputType="number"
+                        android:layout_marginStart="5dp"
+                        android:maxLength="10"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="⦿ Content Table:-"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="10dp"
+                    android:textStyle="bold"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/itemList"
+                    android:layout_width="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="fill_parent" />
+
+
+                <Button
+                    android:id="@+id/addItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/app_color"
+                    app:cornerRadius="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="Add Item "
+                    android:textColor="@color/whitenew"/>
+
+                <Button
+                    android:id="@+id/generatePDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/app_color"
+                    app:cornerRadius="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    android:text="Generate Bill"
+                    android:textColor="@color/whitenew"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

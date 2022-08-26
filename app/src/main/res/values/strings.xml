@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Legal 251 Utilities</string>
+
+
+    <string name="loan_amount">Loan Amount<font color="#FF3030"> *</font></string>
+    <string name="emi_amount">EMI Amount<font color="#FF3030"> *</font></string>
+    <string name="initial_amount">Initial Amount<font color="#FF3030"> *</font></string>
+    <string name="time_period">Time Period<font color="#FF3030"> *</font></string>
+    <string name="expected_return">Returns Expected<font color="#FF3030"> *</font></string>
+    <string name="rate_of_gst">Rate Of GST<font color="#FF3030"> *</font></string>
+    <string name="rate_of_interest">Interest Rate<font color="#FF3030"> *</font></string>
+    <string name="your_state">Your State<font color="#FF3030"> *</font></string>
+    <string name="customer_state">Customer State<font color="#FF3030"> *</font></string>
+
+    <string name="interest">Interest %</string>
+    <string name="period">Period</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="emi">EMI</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="calculate">calculate</string>
+    <string name="reset">Reset</string>
+    <string name="monthly_emi">Monthly EMI :<font color="#FF3030"> %s</font> </string>
+    <string name="monthly_emi_">Monthly EMI :</string>
+    <string name="total_interest">Total Interest :<font color="#FF3030"> %s</font> </string>
+    <string name="total_payment">Total Payment : <font color="#FF3030"> %s</font>  </string>
+    <string name="add_gst">Add GST + </string>
+    <string name="remove_gst">Remove GST - </string>
+    <string name="monthly_investment">Monthly Investment<font color="#FF3030"> *</font></string>
+    <string name="monthly_basic_salary">Monthly salary(Basic+DA)<font color="#FF3030"> *</font></string>
+    <string name="deposit_amnt">Deposit Amount<font color="#FF3030"> *</font></string>
+    <string name="annual_rate">Annual rate of return expected(%)</string>
+    <string name="learn_more">Learn more about features of legal251</string>
+    <string name="gst_calculator">GST Calculator</string>
+    <string name="tds_calculator">TDS Calculator</string>
+    <string name="compare_cal">Compare Calculator</string>
+    <string name="sip_calculator">SIP Calculator</string>
+    <string name="gratuity_cal">Gratuity Calculator</string>
+
+    <string name="fd_calculator">FD Calculator</string>
+    <string name="rd_calculator">RD Calculator</string>
+    <string name="hra_calculator">HRA Calculator</string>
+
+    <string name="loan_tenure">Loan tenure Calculator</string>
+    <string name="loan_amount_level">Loan Amount Calculator</string>
+    <string name="loan_rateofinterest">Loan Interest Calculator</string>
+
+    <string name="ppf_calculator">PPF Calculator</string>
+    <string name="multiple_duration">Multiple Duration(Years)<font color="#FF3030"> *</font></string>
+    <string name="total_gratuity_payable">Total Gratuity payable</string>
+
+    <string name="eightyuCalculator">80U Calculator</string>
+    <string name="financial_year">Financial year<font color="#FF3030"> *</font></string>
+    <string name="status">Status<font color="#FF3030"> *</font></string>
+    <string name="deduction_amount">Deduction amount<font color="#FF3030"> *</font></string>
+    <string name="percentagedisability">Percentage of disablity<font color="#FF3030"> *</font></string>
+    <string name="invoice_detail">Invoice Detail<font color="#FF3030"> *</font></string>
+    <string name="bill_to">Bill to<font color="#FF3030"> *</font></string>
+    <string name="item_description">Item Description<font color="#FF3030"> *</font></string>
+    <string name="amount_peritem">Amount Per Item<font color="#FF3030"> *</font></string>
+    <string name="quantity">Quantity<font color="#FF3030"> *</font></string>
+
+    <string name="content_table">Content Table</string>
+    <string name="invoice_creator">Invoice</string>
+    <string name="invoice_num">Invoice No.</string>
+
+
+    <string name="basic_salary">Basic salary<font color="#FF3030"> *</font></string>
+    <string name="living_in">Living in<font color="#FF3030"> *</font></string>
+    <string name="dearness_allowance">Dearness allowance<font color="#FF3030"> *</font></string>
+    <string name="hra_received">HRA Received<font color="#FF3030"> *</font></string>
+    <string name="rent_paid">Rent Paid<font color="#FF3030"> *</font></string>
+    <string name="metro_city">* Metro cities are Delhi, Kolkata, Mumbai, Chennai, Bangalore, Ahmedabad, Pune, Surat .</string>
+
+
+    <string name="recipient">Recipient<font color="#FF3030"> *</font></string>
+    <string name="amount_of_payment">Amount of Payment<font color="#FF3030"> *</font></string>
+    <string name="nature_of_payment">Nature of Payment <font color="#FF3030"> *</font></string>
+    <string name="pan_of_recipient_available">PAN of Recipient is Available <font color="#FF3030"> *</font></string>
+
+    <!--capital gain calculator-->
+    <string name="type_of_sold_assest">Type of Asset Sold<font color="#FF3030"> *</font></string>
+    <string name="net_sellingprice">Net Selling Price<font color="#FF3030"> *</font></string>
+    <string name="net_buyingprice">Net Buying Price<font color="#FF3030"> *</font></string>
+    <string name="assest_bought_date">Asset Bought Date<font color="#FF3030"> *</font></string>
+    <string name="assest_sold_date">Asset Sold Date<font color="#FF3030"> *</font></string>
+    <string name="capital_gain">Capital Gain Calculator</string>
+
+    <string name="lossMessage">You can adjust your long term capital losses from this transaction against long term capital gain from other transactions. Short term capital losses can be adjusted against both lonf term and short term profits from other transactions.</string>
+
+
+    <!--stamp duty calculator-->
+    <string name="stamp_duty">Stamp Duty Calculator</string>
+    <string name="property_value">Property Value<font color="#FF3030"> *</font></string>
+
+
+
+    <string name="sample_device_admin_description">sample_device_admin_description</string>
+    <string name="sample_device_admin">sample_device_admin</string>
+</resources>
